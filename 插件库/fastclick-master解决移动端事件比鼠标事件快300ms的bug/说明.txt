@@ -1,0 +1,5 @@
+移动端事件会比鼠标事件快大约300ms 还有一个bug 只不过这个bug不去修改
+
+  > 下载地址:https://github.com/ftlabs/fastclick
+
+  > 中文文档:无中文文档 英文文档为github地址

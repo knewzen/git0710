@@ -1,0 +1,13 @@
+swipe是最精准的触摸轮播图插件
+
+下载地址:https://github.com/thebird/Swipe
+
+   中文文档:无中文文档 英文文档为github地址
+
+
+    如果出现鼠标手指触摸之后不能轮播的情况 请修改代码
+    function stop() {
+      //delay = 0;
+      delay = options.auto > 0 ? options.auto : 0;
+      clearTimeout(interval);
+    }

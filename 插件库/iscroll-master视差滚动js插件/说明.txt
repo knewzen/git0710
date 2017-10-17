@@ -1,0 +1,5 @@
+iScroll是一个高性能，资源占用少，无依赖，多平台的javascript滚动插件
+
+  > 下载地址:https://github.com/cubiq/iscroll
+
+  > 中文文档:https://iiunknown.gitbooks.io/iscroll-5-api-cn/
