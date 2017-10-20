@@ -1,0 +1,13 @@
+<!-- Latest compiled and minified {{#if className}}{{className}}{{else}}CSS and JS{{/if}} -->
+{{#unless className}}
+<link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.6.1/css/amazeui.min.css">
+<script src="http://staticfile.qnssl.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="http://cdn.amazeui.org/amazeui/2.6.1/js/amazeui.min.js"></script>
+{{/unless}}
+{{#ifCond className '==' 'css'}}
+<link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.6.1/css/amazeui.min.css">
+{{/ifCond}}
+{{#ifCond className '==' 'js'}}
+<script src="http://staticfile.qnssl.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="http://cdn.amazeui.org/amazeui/2.6.1/js/amazeui.min.js"></script>
+{{/ifCond}}

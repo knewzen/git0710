@@ -1,0 +1,21 @@
+{
+    "name": "amazeui-vscode-snippets",
+    "displayName": "amazeui-vscode-snippets",
+    "description": "Amaze UI snippets for VSCode",
+    "version": "0.0.2",
+    "publisher": "minwe",
+    "engines": {
+        "vscode": "^0.10.10"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

@@ -1,0 +1,545 @@
+'.text.html':
+  'am-alert-danger':
+    'prefix': 'am-alert:danger'
+    'body': '<div class="am-alert am-alert-danger" data-am-alert>\n  <button type="button" class="am-close">&times;</button>\n  <p>${1:\u5185\u5BB9}</p>\n</div>'
+  'am-alert-secondary':
+    'prefix': 'am-alert:secondary'
+    'body': '<div class="am-alert am-alert-secondary" data-am-alert>\n  <button type="button" class="am-close">&times;</button>\n  <p>${1:\u5185\u5BB9}</p>\n</div>'
+  'am-alert-success':
+    'prefix': 'am-alert:success'
+    'body': '<div class="am-alert am-alert-success" data-am-alert>\n  <button type="button" class="am-close">&times;</button>\n  <p>${1:\u5185\u5BB9}</p>\n</div>'
+  'am-alert-warning':
+    'prefix': 'am-alert:warning'
+    'body': '<div class="am-alert am-alert-warning" data-am-alert>\n  <button type="button" class="am-close">&times;</button>\n  <p>${1:\u5185\u5BB9}</p>\n</div>'
+  'am-alert':
+    'prefix': 'am-alert'
+    'body': '<div class="am-alert" data-am-alert>\n  <button type="button" class="am-close">&times;</button>\n  <p>${1:\u5185\u5BB9}</p>\n</div>'
+  'am-article':
+    'prefix': 'am-article'
+    'body': '<article class="am-article">\n  <div class="am-article-hd">\n    <h1 class="am-article-title">${1:title}</h1>\n    <p class="am-article-meta">${2:meta}</p>\n  </div>\n\n  <div class="am-article-bd">\n    <p class="am-article-lead">${3:lead}</p>\n    ${4:\u5185\u5BB9}\n  </div>\n</article>'
+  'am-animation-fade':
+    'prefix': 'am-animation:fade'
+    'body': '<div class="am-animation-fade${1: am-animation-reverse}">fade</div>'
+  'am-animation-scale-down':
+    'prefix': 'am-animation:scale-down'
+    'body': '<div class="am-animation-scale-down${1: am-animation-reverse}">scale-down</div>'
+  'am-animation-scale-up':
+    'prefix': 'am-animation:scale-up'
+    'body': '<div class="am-animation-scale-up${1: am-animation-reverse}">scale-up</div>'
+  'am-animation-shake':
+    'prefix': 'am-animation:shake'
+    'body': '<div class="am-animation-shake${1: am-animation-reverse}">shake</div>'
+  'am-animation-slide-bottom':
+    'prefix': 'am-animation:slide-bottom'
+    'body': '<div class="am-animation-slide-bottom${1: am-animation-reverse}">slide-bottom</div>'
+  'am-animation-slide-left':
+    'prefix': 'am-animation:slide-left'
+    'body': '<div class="am-animation-slide-left${1: am-animation-reverse}">slide-left</div>'
+  'am-animation-slide-right':
+    'prefix': 'am-animation:slide-right'
+    'body': '<div class="am-animation-slide-right${1: am-animation-reverse}">slide-right</div>'
+  'am-animation-slide-top':
+    'prefix': 'am-animation:slide-top'
+    'body': '<div class="am-animation-slide-top${1: am-animation-reverse}">slide-top</div>'
+  'am-animation-spin':
+    'prefix': 'am-animation:spin'
+    'body': '<div class="am-animation-spin${1: am-animation-reverse}">spin</div>'
+  'am-animation':
+    'prefix': 'am-animation'
+    'body': '<div class="${1: am-animation-reverse}"></div>'
+  'am-avggrid':
+    'prefix': 'am-avggrid'
+    'body': '<ul class="am-avg-sm-${1:1} am-avg-md-${2:2} am-avg-lg-${3:3}">\n  <li>${4:\u5185\u5BB9}</li>\n</ul>'
+  'am-breadcrumb-icon':
+    'prefix': 'am-breadcrumb:icon'
+    'body': '<ol class="am-breadcrumb">\n  <li><a href="#" class="am-icon-${1:home}">${2:\u9996\u9875}</a></li>\n  <li><a href="#">${3:\u5206\u7C7B}</a></li>\n  <li class="am-active">${4:\u5185\u5BB9}</li>\n</ol>'
+  'am-breadcrumb-slash':
+    'prefix': 'am-breadcrumb:slash'
+    'body': '<ol class="am-breadcrumb am-breadcrumb-slash">\n  <li><a href="#">${1:\u9996\u9875}</a></li>\n  <li><a href="#">${2:\u5206\u7C7B}</a></li>\n  <li class="am-active">${3:\u5185\u5BB9}</li>\n</ol>'
+  'am-breadcrumb':
+    'prefix': 'am-breadcrumb'
+    'body': '<ol class="am-breadcrumb">\n  <li><a href="#">${1:\u9996\u9875}</a></li>\n  <li><a href="#">${2:\u5206\u7C7B}</a></li>\n  <li class="am-active">${3:\u5185\u5BB9}</li>\n</ol>'
+  'am-badge-danger':
+    'prefix': 'am-badge:danger'
+    'body': '<span class="am-badge am-badge-danger">${1:\u5C0F\u5FBD\u7AE0}</span>'
+  'am-badge-lg':
+    'prefix': 'am-badge:lg'
+    'body': '<span class="am-badge am-badge-lg">${1:\u5C0F\u5FBD\u7AE0}</span>'
+  'am-badge-primary':
+    'prefix': 'am-badge:primary'
+    'body': '<span class="am-badge am-badge-primary">${1:\u5C0F\u5FBD\u7AE0}</span>'
+  'am-badge-radius':
+    'prefix': 'am-badge:radius'
+    'body': '<span class="am-badge am-badge-radius">${1:\u5706\u89D2\u5C0F\u5FBD\u7AE0}</span>'
+  'am-badge-round':
+    'prefix': 'am-badge:round'
+    'body': '<span class="am-badge am-badge-round">${1:\u692D\u5706\u5C0F\u5FBD\u7AE0}</span>'
+  'am-badge-secondary':
+    'prefix': 'am-badge:secondary'
+    'body': '<span class="am-badge am-badge-secondary">${1:\u5C0F\u5FBD\u7AE0}</span>'
+  'am-badge-sm':
+    'prefix': 'am-badge:sm'
+    'body': '<span class="am-badge am-badge-sm">${1:\u5C0F\u5FBD\u7AE0}</span>'
+  'am-badge-success':
+    'prefix': 'am-badge:success'
+    'body': '<span class="am-badge am-badge-success">${1:\u5C0F\u5FBD\u7AE0}</span>'
+  'am-badge-warning':
+    'prefix': 'am-badge:warning'
+    'body': '<span class="am-badge am-badge-warning">${1:\u5C0F\u5FBD\u7AE0}</span>'
+  'am-badge-xl':
+    'prefix': 'am-badge:xl'
+    'body': '<span class="am-badge am-badge-xl">${1:\u5C0F\u5FBD\u7AE0}</span>'
+  'am-badge-xs':
+    'prefix': 'am-badge:xs'
+    'body': '<span class="am-badge am-badge-xs">${1:\u5C0F\u5FBD\u7AE0}</span>'
+  'am-badge':
+    'prefix': 'am-badge'
+    'body': '<span class="am-badge">${1:\u5C0F\u5FBD\u7AE0}</span>'
+  'am-btn-active':
+    'prefix': 'am-btn:active'
+    'body': '<button type="button" class="am-btn am-btn-default am-active">${1:active \u6309\u94AE}</button>'
+  'am-btn-block':
+    'prefix': 'am-btn:block'
+    'body': '<button type="button" class="am-btn am-btn-default am-btn-block">${1:\u6309\u94AE}</button>'
+  'am-btn-danger':
+    'prefix': 'am-btn:danger'
+    'body': '<button type="button" class="am-btn am-btn-default am-btn-danger">${1:\u6309\u94AE}</button>'
+  'am-btn-default':
+    'prefix': 'am-btn:default'
+    'body': '<button type="button" class="am-btn am-btn-default am-btn-default">${1:\u6309\u94AE}</button>'
+  'am-btn-disabled':
+    'prefix': 'am-btn:disabled'
+    'body': '<button type="button" class="am-btn am-btn-default am-disabled">${1:disabled \u6309\u94AE}</button>'
+  'am-btn-lg':
+    'prefix': 'am-btn:lg'
+    'body': '<button type="button" class="am-btn am-btn-default am-btn-lg">${1:\u6309\u94AE}</button>'
+  'am-btn-primary':
+    'prefix': 'am-btn:primary'
+    'body': '<button type="button" class="am-btn am-btn-default am-btn-primary">${1:\u6309\u94AE}</button>'
+  'am-btn-radius':
+    'prefix': 'am-btn:radius'
+    'body': '<button type="button" class="am-btn am-btn-default am-radius">${1:radius \u6309\u94AE}</button>'
+  'am-btn-round':
+    'prefix': 'am-btn:round'
+    'body': '<button type="button" class="am-btn am-btn-default am-round">${1:round \u6309\u94AE}</button>'
+  'am-btn-secondary':
+    'prefix': 'am-btn:secondary'
+    'body': '<button type="button" class="am-btn am-btn-default am-btn-secondary">${1:\u6309\u94AE}</button>'
+  'am-btn-sm':
+    'prefix': 'am-btn:sm'
+    'body': '<button type="button" class="am-btn am-btn-default am-btn-sm">${1:\u6309\u94AE}</button>'
+  'am-btn-success':
+    'prefix': 'am-btn:success'
+    'body': '<button type="button" class="am-btn am-btn-default am-btn-success">${1:\u6309\u94AE}</button>'
+  'am-btn-warning':
+    'prefix': 'am-btn:warning'
+    'body': '<button type="button" class="am-btn am-btn-default am-btn-warning">${1:\u6309\u94AE}</button>'
+  'am-btn-xl':
+    'prefix': 'am-btn:xl'
+    'body': '<button type="button" class="am-btn am-btn-default am-btn-xl">${1:\u6309\u94AE}</button>'
+  'am-btn-xs':
+    'prefix': 'am-btn:xs'
+    'body': '<button type="button" class="am-btn am-btn-default am-btn-xs">${1:\u6309\u94AE}</button>'
+  'am-btn':
+    'prefix': 'am-btn'
+    'body': '<button type="button" class="am-btn">${1:\u6309\u94AE}</button>'
+  'am-btn-group-justify':
+    'prefix': 'am-btn-group:justify'
+    'body': '<div class="am-btn-group am-btn-group-justify">\n    <a class="am-btn am-btn-default" role="button">${1:\u81EA\u9002\u5E94\u5BBD\u5EA6}</a>\n    <button type="button" class="am-btn am-btn-default">${2:\u6309\u94AE\u7EC4}</button>  \n  </div>'
+  'am-btn-group-lg':
+    'prefix': 'am-btn-group:lg'
+    'body': '<div class="am-btn-group am-btn-group-lg">\n    <button type="button" class="am-btn am-btn-default">${1:\u6309\u94AE\u7EC4}</button>  \n  </div>'
+  'am-btn-group-sm':
+    'prefix': 'am-btn-group:sm'
+    'body': '<div class="am-btn-group am-btn-group-sm">\n    <button type="button" class="am-btn am-btn-default">${1:\u6309\u94AE\u7EC4}</button>  \n  </div>'
+  'am-btn-group-stacked':
+    'prefix': 'am-btn-group:stacked'
+    'body': '<div class="am-btn-group-stacked">\n    <button type="button" class="am-btn am-btn-default">${1:\u6309\u94AE\u7EC4}</button>  \n  </div>'
+  'am-btn-group-toolbar':
+    'prefix': 'am-btn-group:toolbar'
+    'body': '<div class="am-btn-toolbar">\n  <div class="am-btn-group am-btn-group-toolbar">\n    <button type="button" class="am-btn am-btn-default">${1:\u6309\u94AE\u7EC4}</button>  \n  </div>\n</div>'
+  'am-btn-group-xs':
+    'prefix': 'am-btn-group:xs'
+    'body': '<div class="am-btn-group am-btn-group-xs">\n    <button type="button" class="am-btn am-btn-default">${1:\u6309\u94AE\u7EC4}</button>  \n  </div>'
+  'am-btn-group':
+    'prefix': 'am-btn-group'
+    'body': '<div class="am-btn-group">\n    <button type="button" class="am-btn am-btn-default">${1:\u6309\u94AE\u7EC4}</button>  \n  </div>'
+  'am-cdn-css':
+    'prefix': 'am-cdn:css'
+    'body': '<!-- Latest compiled and minified css -->\n<link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.6.1/css/amazeui.min.css">'
+  'am-cdn-js':
+    'prefix': 'am-cdn:js'
+    'body': '<!-- Latest compiled and minified js -->\n<script src="http://staticfile.qnssl.com/jquery/2.2.1/jquery.min.js"></script>\n<script src="http://cdn.amazeui.org/amazeui/2.6.1/js/amazeui.min.js"></script>'
+  'am-cdn':
+    'prefix': 'am-cdn'
+    'body': '<!-- Latest compiled and minified CSS and JS -->\n<link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.6.1/css/amazeui.min.css">\n<script src="http://staticfile.qnssl.com/jquery/2.2.1/jquery.min.js"></script>\n<script src="http://cdn.amazeui.org/amazeui/2.6.1/js/amazeui.min.js"></script>'
+  'am-close-alt':
+    'prefix': 'am-close:alt'
+    'body': '<button type="button" class="am-closeam-close-alt">&times;</button>'
+  'am-close-spin':
+    'prefix': 'am-close:spin'
+    'body': '<button type="button" class="am-closeam-close-spin">&times;</button>'
+  'am-close':
+    'prefix': 'am-close'
+    'body': '<button type="button" class="am-close">&times;</button>'
+  'am-code-scrollable':
+    'prefix': 'am-code:scrollable'
+    'body': '<pre class="am-pre-scrollable">\n\t<code>\n\t\t${1:code}\n\t</code>\n</pre>'
+  'am-code':
+    'prefix': 'am-code'
+    'body': '<pre>\n\t<code>\n\t\t${1:code}\n\t</code>\n</pre>'
+  'am-collapse-accordion':
+    'prefix': 'am-collapse:accordion'
+    'body': '<!-- \u624B\u98CE\u7434\u6298\u53E0\u6548\u679C -->\n<div class="am-panel-group" id="accordion">\n  <div class="am-panel am-panel-default">\n    <div class="am-panel-hd">\n      <h4 class="am-panel-title" data-am-collapse="{parent: \'#accordion\', target: \'#${1:do-not-say-1}\'}">\n        ${2:\u6807\u9898 #1}\n      </h4>\n    </div>\n    <!-- \u9ED8\u8BA4\u663E\u793A -->\n    <div id="${1:do-not-say-1}" class="am-panel-collapse am-collapse am-in">\n      <div class="am-panel-bd">\n        ${4:\u5185\u5BB9 #1}\n      </div>\n    </div>\n  </div>\n  <div class="am-panel am-panel-default">\n    <div class="am-panel-hd">\n      <h4 class="am-panel-title" data-am-collapse="{parent: \'#${5:accordion}\', target: \'#${6:do-not-say-2}\'}">\n        ${7:\u6807\u9898 #2}\n      </h4>\n    </div>\n    <div id="${6:do-not-say-2}" class="am-panel-collapse am-collapse">\n      <div class="am-panel-bd">\n        ${9:\u5185\u5BB9 #2}\n      </div>\n    </div>\n  </div>\n</div>'
+  'am-collapse':
+    'prefix': 'am-collapse'
+    'body': '<!-- \u6298\u53E0\u83DC\u5355\u6548\u679C -->\n<button class="am-btn am-btn-primary" data-am-collapse="{target: \'#${1:collapse-nav}\'}">${2:Menu} <i class="am-icon-bars"></i></button>\n<nav>\n  <ul id="${1:collapse-nav}" class="am-nav am-collapse">\n    <li><a href="">${4:\u6807\u9898}</a></li>\n    <li class="am-active"><a href="">${5:active \u6807\u9898}</a></li>\n  </ul>\n</nav>'
+  'am-comment':
+    'prefix': 'am-comment'
+    'body': '<article class="am-comment"> <!-- \u8BC4\u8BBA\u5BB9\u5668 -->\n  <a href="">\n    <img class="am-comment-avatar" alt=""/> <!-- \u8BC4\u8BBA\u8005\u5934\u50CF -->\n  </a>\n\n  <div class="am-comment-main"> <!-- \u8BC4\u8BBA\u5185\u5BB9\u5BB9\u5668 -->\n    <header class="am-comment-hd">\n      <!--<h3 class="am-comment-title">\u8BC4\u8BBA\u6807\u9898</h3>-->\n      <div class="am-comment-meta"> <!-- \u8BC4\u8BBA\u5143\u6570\u636E -->\n        <a href="#link-to-user" class="am-comment-author">${1:\u8BC4\u8BBA\u8005}</a> <!-- \u8BC4\u8BBA\u8005 -->\n        ${2:\u8BC4\u8BBA\u4E8E} <time datetime=""></time>\n      </div>\n    </header>\n\n    <div class="am-comment-bd">${3:\u8BC4\u8BBA\u5185\u5BB9}</div> <!-- \u8BC4\u8BBA\u5185\u5BB9 -->\n  </div>\n</article>'
+  'am-datapicker-group':
+    'prefix': 'am-datapicker:group'
+    'body': '<div class="am-input-group am-datepicker-date" data-am-datepicker>\n  <input type="text" class="am-form-field" placeholder="${1:\u65E5\u5386\u7EC4\u4EF6}" readonly>\n  <span class="am-input-group-btn am-datepicker-add-on">\n    <button class="am-btn am-btn-default" type="button"><span class="am-icon-calendar"></span> </button>\n  </span>\n</div>'
+  'am-datapicker':
+    'prefix': 'am-datapicker'
+    'body': '<p><input type="text" class="am-form-field" placeholder="${1:\u65E5\u5386\u7EC4\u4EF6}" data-am-datepicker /></p>'
+  'am-dropdown-content':
+    'prefix': 'am-dropdown:content'
+    'body': '<div class="am-dropdown" data-am-dropdown>\n  <button class="am-btn am-btn-success am-dropdown-toggle">${1:Dropdown} <span class="am-icon-caret-down"></span></button>\n  <div class="am-dropdown-content">\n    ${2:\u5185\u5BB9}\n  </div>\n</div>'
+  'am-dropdown-justify':
+    'prefix': 'am-dropdown:justify'
+    'body': '<div id="${1:doc-dropdown-justify}">\n  <div class="am-dropdown" data-am-dropdown="{justify: \'#${1:doc-dropdown-justify}\'}">\n    <button class="am-btn am-btn-success am-dropdown-toggle">${3:\u5BBD\u5EA6\u9002\u5E94\u4E0B\u62C9}<span class="am-icon-caret-down"></span></button>\n    <div class="am-dropdown-content">\n      <h2>${4:\u6807\u9898}</h2>\n      <p>\n        ${5:\u5185\u5BB9}\n      </p>\n    </div>\n  </div>\n</div>'
+  'am-dropdown-up':
+    'prefix': 'am-dropdown:up'
+    'body': '<div class="am-dropdown am-dropdown-up" data-am-dropdown>\n  <button class="am-btn am-btn-danger am-dropdown-toggle" data-am-dropdown-toggle>${1:\u4E0A\u62C9\u5217\u8868} <span class="am-icon-caret-up"></span></button>\n  <ul class="am-dropdown-content">\n    <li class="am-dropdown-header">${2:\u6807\u9898}</li>\n    <li><a href="#">${3:li}</a></li>\n    <li class="am-active"><a href="#">${4:active li}</a></li>\n    <li class="am-disabled"><a href="#">${5:disabled li}</a></li>\n    <li class="am-divider"></li>\n  </ul>\n</div>'
+  'am-dropdown':
+    'prefix': 'am-dropdown'
+    'body': '<div class="am-dropdown" data-am-dropdown>\n<button class="am-btn am-btn-primary am-dropdown-toggle" data-am-dropdown-toggle>${1:\u4E0B\u62C9\u5217\u8868} <span class="am-icon-caret-down"></span></button>\n  <ul class="am-dropdown-content">\n    <li class="am-dropdown-header">${2:\u6807\u9898}</li>\n    <li><a href="#">${3:li}</a></li>\n    <li class="am-active"><a href="#">${4:active li}</a></li>\n    <li class="am-disabled"><a href="#">${5:disabled li}</a></li>\n    <li class="am-divider"></li>\n  </ul>\n</div>'
+
+  'am-form-horizontal':
+    'prefix': 'am-form:horizontal'
+    'body': '<form action="${1:action}" method="POST" role="form" class="am-form am-form-horizontal">\n  <!-- form \u7ED3\u5408 grid \u4F7F\u7528 -->\n  <div class="am-form-group">\n    <label for="" class="am-u-sm-${2:2} am-form-label">${3:\u7535\u5B50\u90AE\u4EF6}</label>\n    <div class="am-u-sm-10">\n      <input type="email" id="" placeholder="${4:\u8F93\u5165\u4F60\u7684\u7535\u5B50\u90AE\u4EF6}" />\n    </div>\n  </div>\n\n  <div class="am-form-group">\n    <div class="am-u-sm-${5:10} am-u-sm-offset-${2:2}">\n      <button type="submit" class="am-btn am-btn-default">${7:\u63D0\u4EA4\u767B\u5165}</button>\n    </div>\n  </div>\n</form>'
+  'am-form-inline':
+    'prefix': 'am-form:inline'
+    'body': '<form action="${1:action}" method="POST" role="form" class="am-form am-form-inline">\n  <legend>${2:\u8868\u5355\u6807\u9898}</legend>\n\n  <div class="am-form-group">\n    <label for="">${3:\u59D3\u540D}</label>\n    <input type="text" id="" placeholder="${4:\u8F93\u5165\u4F60\u7684\u59D3\u540D}">\n  </div>\n\n  <button type="submit" class="am-btn am-btn-primary">${5:\u63D0\u4EA4}</button>\n</form>'
+  'am-form':
+    'prefix': 'am-form'
+    'body': '<form action="${1:action}" method="POST" role="form" class="am-form">\n  <legend>${2:\u8868\u5355\u6807\u9898}</legend>\n\n  <div class="am-form-group">\n    <label for="">${3:\u59D3\u540D}</label>\n    <input type="text" id="" placeholder="${4:\u8F93\u5165\u4F60\u7684\u59D3\u540D}">\n  </div>\n\n  <button type="submit" class="am-btn am-btn-primary">${5:\u63D0\u4EA4}</button>\n</form>'
+  'am-grid-1':
+    'prefix': 'am-grid:1'
+    'body': '<div class="am-g">\n  <div class="am-u-sm-1 am-u-md-1 am-u-lg-1">\n    ${1:\u5185\u5BB9}\n  </div>\n</div>'
+  'am-grid-10':
+    'prefix': 'am-grid:10'
+    'body': '<div class="am-g">\n  <div class="am-u-sm-10 am-u-md-10 am-u-lg-10">\n    ${1:\u5185\u5BB9}\n  </div>\n</div>'
+  'am-grid-11':
+    'prefix': 'am-grid:11'
+    'body': '<div class="am-g">\n  <div class="am-u-sm-11 am-u-md-11 am-u-lg-11">\n    ${1:\u5185\u5BB9}\n  </div>\n</div>'
+  'am-grid-12':
+    'prefix': 'am-grid:12'
+    'body': '<div class="am-g">\n  <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">\n    ${1:\u5185\u5BB9}\n  </div>\n</div>'
+  'am-grid-2':
+    'prefix': 'am-grid:2'
+    'body': '<div class="am-g am-g-2">\n  <div class="am-u-sm-${1:1} am-u-md-${2:2} am-u-lg-${3:3}">\n    ${4:\u5185\u5BB9}\n  </div>\n</div>'
+  'am-grid-3':
+    'prefix': 'am-grid:3'
+    'body': '<div class="am-g am-g-3">\n  <div class="am-u-sm-${1:1} am-u-md-${2:2} am-u-lg-${3:3}">\n    ${4:\u5185\u5BB9}\n  </div>\n</div>'
+  'am-grid-4':
+    'prefix': 'am-grid:4'
+    'body': '<div class="am-g am-g-4">\n  <div class="am-u-sm-${1:1} am-u-md-${2:2} am-u-lg-${3:3}">\n    ${4:\u5185\u5BB9}\n  </div>\n</div>'
+  'am-grid-5':
+    'prefix': 'am-grid:5'
+    'body': '<div class="am-g am-g-5">\n  <div class="am-u-sm-${1:1} am-u-md-${2:2} am-u-lg-${3:3}">\n    ${4:\u5185\u5BB9}\n  </div>\n</div>'
+  'am-grid-6':
+    'prefix': 'am-grid:6'
+    'body': '<div class="am-g am-g-6">\n  <div class="am-u-sm-${1:1} am-u-md-${2:2} am-u-lg-${3:3}">\n    ${4:\u5185\u5BB9}\n  </div>\n</div>'
+  'am-grid-7':
+    'prefix': 'am-grid:7'
+    'body': '<div class="am-g am-g-7">\n  <div class="am-u-sm-${1:1} am-u-md-${2:2} am-u-lg-${3:3}">\n    ${4:\u5185\u5BB9}\n  </div>\n</div>'
+  'am-grid-8':
+    'prefix': 'am-grid:8'
+    'body': '<div class="am-g am-g-8">\n  <div class="am-u-sm-${1:1} am-u-md-${2:2} am-u-lg-${3:3}">\n    ${4:\u5185\u5BB9}\n  </div>\n</div>'
+  'am-grid-9':
+    'prefix': 'am-grid:9'
+    'body': '<div class="am-g am-g-9">\n  <div class="am-u-sm-${1:1} am-u-md-${2:2} am-u-lg-${3:3}">\n    ${4:\u5185\u5BB9}\n  </div>\n</div>'
+  'am-grid-collapse':
+    'prefix': 'am-grid:collapse'
+    'body': '<div class="am-g am-g-collapse">\n  <div class="am-u-sm-${1:1} am-u-md-${2:2} am-u-lg-${3:3}">\n    ${4:\u5185\u5BB9}\n  </div>\n</div>'
+  'am-grid-container':
+    'prefix': 'am-grid:container'
+    'body': '<div class="am-container">\n  <div class="am-g">\n    <div class="am-u-sm-${1:1} am-u-md-${2:2} am-u-lg-${3:3}">\n      ${4:\u5185\u5BB9}\n    </div>\n  </div>\n</div>'
+  'am-grid-fixed':
+    'prefix': 'am-grid:fixed'
+    'body': '<div class="am-g am-g-fixed">\n  <div class="am-u-sm-${1:1} am-u-md-${2:2} am-u-lg-${3:3}">\n    ${4:\u5185\u5BB9}\n  </div>\n</div>'
+  'am-grid':
+    'prefix': 'am-grid'
+    'body': '<div class="am-g">\n  <div class="am-u-sm-${1:1} am-u-md-${2:2} am-u-lg-${3:3}">\n    ${4:\u5185\u5BB9}\n  </div>\n</div>'
+  'am-input-group-btn':
+    'prefix': 'am-input-group:btn'
+    'body': '<div class="am-input-group am-input-group-btn">\n  <span class="am-input-group-btn">\n    <button class="am-btn am-btn-default" type="button">${1:<span class="am-icon-search"></span>}</button>\n  </span>\n</div>'
+  'am-input-group-danger':
+    'prefix': 'am-input-group:danger'
+    'body': '<div class="am-input-group am-input-group-danger">\n  <span class="am-input-group-label">    \n    <i class="am-icon-user"></i>    \n  </span>\n  <input type="text" class="am-form-field" placeholder="${1:Username}">\n</div>'
+  'am-input-group-lg':
+    'prefix': 'am-input-group:lg'
+    'body': '<div class="am-input-group am-input-group-lg">\n  <span class="am-input-group-label">    \n    <i class="am-icon-user"></i>    \n  </span>\n  <input type="text" class="am-form-field" placeholder="${1:Username}">\n</div>'
+  'am-input-group-primary':
+    'prefix': 'am-input-group:primary'
+    'body': '<div class="am-input-group am-input-group-primary">\n  <span class="am-input-group-label">    \n    <i class="am-icon-user"></i>    \n  </span>\n  <input type="text" class="am-form-field" placeholder="${1:Username}">\n</div>'
+  'am-input-group-secondary':
+    'prefix': 'am-input-group:secondary'
+    'body': '<div class="am-input-group am-input-group-secondary">\n  <span class="am-input-group-label">    \n    <i class="am-icon-user"></i>    \n  </span>\n  <input type="text" class="am-form-field" placeholder="${1:Username}">\n</div>'
+  'am-input-group-sm':
+    'prefix': 'am-input-group:sm'
+    'body': '<div class="am-input-group am-input-group-sm">\n  <span class="am-input-group-label">    \n    <i class="am-icon-user"></i>    \n  </span>\n  <input type="text" class="am-form-field" placeholder="${1:Username}">\n</div>'
+  'am-input-group-success':
+    'prefix': 'am-input-group:success'
+    'body': '<div class="am-input-group am-input-group-success">\n  <span class="am-input-group-label">    \n    <i class="am-icon-user"></i>    \n  </span>\n  <input type="text" class="am-form-field" placeholder="${1:Username}">\n</div>'
+  'am-input-group-warning':
+    'prefix': 'am-input-group:warning'
+    'body': '<div class="am-input-group am-input-group-warning">\n  <span class="am-input-group-label">    \n    <i class="am-icon-user"></i>    \n  </span>\n  <input type="text" class="am-form-field" placeholder="${1:Username}">\n</div>'
+  'am-input-group':
+    'prefix': 'am-input-group'
+    'body': '<div class="am-input-group">\n  <span class="am-input-group-label">    \n    <i class="am-icon-user"></i>    \n  </span>\n  <input type="text" class="am-form-field" placeholder="${1:Username}">\n</div>'
+  'am-icon-btn':
+    'prefix': 'am-icon:btn'
+    'body': '<span class="am-icon-${1:home} am-icon-btn">${2:\u5B57\u4F53\u56FE\u6807}</span>'
+  'am-icon-lg':
+    'prefix': 'am-icon:lg'
+    'body': '<span class="am-icon-${1:home} am-icon-lg">${2:\u5B57\u4F53\u56FE\u6807}</span>'
+  'am-icon-md':
+    'prefix': 'am-icon:md'
+    'body': '<span class="am-icon-${1:home} am-icon-md">${2:\u5B57\u4F53\u56FE\u6807}</span>'
+  'am-icon-sm':
+    'prefix': 'am-icon:sm'
+    'body': '<span class="am-icon-${1:home} am-icon-sm">${2:\u5B57\u4F53\u56FE\u6807}</span>'
+  'am-icon-spin':
+    'prefix': 'am-icon:spin'
+    'body': '<span class="am-icon-${1:home} am-icon-spin">${2:\u5B57\u4F53\u56FE\u6807}</span>'
+  'am-icon':
+    'prefix': 'am-icon'
+    'body': '<span class="am-icon-${1:home}">${2:\u5B57\u4F53\u56FE\u6807}</span>'
+  'am-html':
+    'prefix': 'am-html'
+    'body': '<!doctype html>\n<html class="no-js">\n<head>\n  <meta charset="utf-8">\n  <meta http-equiv="X-UA-Compatible" content="IE=edge">\n  <meta name="description" content="">\n  <meta name="keywords" content="">\n  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">\n  <title>${1:\u4F60\u7684\u6807\u9898}</title>\n\n  <!-- Set render engine for 360 browser -->\n  <meta name="renderer" content="webkit">\n\n  <!-- No Baidu Siteapp-->\n  <meta http-equiv="Cache-Control" content="no-siteapp"/>\n\n  <link rel="icon" type="image/png" href="i/favicon.png">\n\n  <!-- Add to homescreen for Chrome on Android -->\n  <meta name="mobile-web-app-capable" content="yes">\n  <link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">\n\n  <!-- Add to homescreen for Safari on iOS -->\n  <meta name="apple-mobile-web-app-capable" content="yes">\n  <meta name="apple-mobile-web-app-status-bar-style" content="black">\n  <meta name="apple-mobile-web-app-title" content="${2:Amaze UI}"/>\n  <link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">\n\n  <!-- Tile icon for Win8 (144x144 + tile color) -->\n  <meta name="msapplication-TileImage" content="i/app-icon72x72@2x.png">\n  <meta name="msapplication-TileColor" content="#0e90d2">\n\n  <!-- Amaze UI CSS -->\n  <link rel="stylesheet" href="//cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css">\n\n</head>\n<body>\n\n<div>${3:\u5F00\u59CB\u5199\u4F60\u7684\u7801...}</div>\n\n<!--[if lt IE 9]>\n<script src="//libs.useso.com/js/jquery/1.11.1/jquery.min.js"></script>\n<script src="//cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>\n<script src="/js/polyfill/rem.min.js"></script>\n<script src="//libs.useso.com/js/respond.js/1.4.2/respond.min.js"></script>\n<script src="//cdn.amazeui.org/amazeui/2.1.0/js/amazeui.legacy.min.js"></script>\n<![endif]-->\n\n<!--[if (gte IE 9)|!(IE)]><!-->\n<script src="//libs.useso.com/js/jquery/2.1.1/jquery.min.js"></script>\n<script src="//cdn.amazeui.org/amazeui/2.1.0/js/amazeui.min.js"></script>\n<!--<![endif]-->\n\n</body>\n</html>'
+  'am-img-circle':
+    'prefix': 'am-img:circle'
+    'body': '<img class="am-circle" alt="" src="${1:\u56FE\u7247\u5730\u5740}" width="" height="" />'
+  'am-img-radius':
+    'prefix': 'am-img:radius'
+    'body': '<img class="am-radius" alt="" src="${1:\u56FE\u7247\u5730\u5740}" width="" height="" />'
+  'am-img-round':
+    'prefix': 'am-img:round'
+    'body': '<img class="am-round" alt="" src="${1:\u56FE\u7247\u5730\u5740}" width="" height="" />'
+  'am-img-thumbnail':
+    'prefix': 'am-img:thumbnail'
+    'body': '<img class="am-img-thumbnail" alt="" src="${1:\u56FE\u7247\u5730\u5740}" width="" height="" />'
+  'am-img':
+    'prefix': 'am-img'
+    'body': '<img alt="" src="${1:\u56FE\u7247\u5730\u5740}" width="" height="" />'
+  'am-list-border':
+    'prefix': 'am-list:border'
+    'body': '<ul class="am-list am-list-border">\n  <li><a href="#">${1:\u5217\u8868\u5185\u5BB9}</a></li>\n</ul>'
+  'am-list-static':
+    'prefix': 'am-list:static'
+    'body': '<ul class="am-list am-list-static">\n  <li><!-- \u7EAF\u6587\u5B57\u5217\u8868 -->${1:\u5217\u8868\u5185\u5BB9} </li>\n</ul>'
+  'am-list-striped':
+    'prefix': 'am-list:striped'
+    'body': '<ul class="am-list am-list-striped">\n  <li><a href="#">${1:\u5217\u8868\u5185\u5BB9}</a></li>\n</ul>'
+  'am-list':
+    'prefix': 'am-list'
+    'body': '<ul class="am-list">\n  <li><a href="#">${1:\u5217\u8868\u5185\u5BB9}</a></li>\n</ul>'
+  'am-nav-justify':
+    'prefix': 'am-nav:justify'
+    'body': '<ul class="am-nav am-nav-justify">\n  <li class="am-active"><a href="#">${1:active\u5217\u8868}</a></li>\n  <li><a href="#">${2:\u5217\u8868}</a></li>\n</ul>'
+  'am-nav-pills':
+    'prefix': 'am-nav:pills'
+    'body': '<ul class="am-nav am-nav-pills">\n  <li class="am-active"><a href="#">${1:active\u5217\u8868}</a></li>\n  <li><a href="#">${2:\u5217\u8868}</a></li>\n</ul>'
+  'am-nav-tabs':
+    'prefix': 'am-nav:tabs'
+    'body': '<ul class="am-nav am-nav-tabs">\n  <li class="am-active"><a href="#">${1:active\u5217\u8868}</a></li>\n  <li><a href="#">${2:\u5217\u8868}</a></li>\n</ul>'
+  'am-nav':
+    'prefix': 'am-nav'
+    'body': '<ul class="am-nav">\n  <li class="am-active"><a href="#">${1:active\u5217\u8868}</a></li>\n  <li><a href="#">${2:\u5217\u8868}</a></li>\n</ul>'
+  'am-modal-actions':
+    'prefix': 'am-modal:actions'
+    'body': '<!-- \u89E6\u53D1 button -->\n<button class="am-btn am-btn-secondary" data-am-modal="{target: \'#${1:my-id}\'}">actions</button>\n<div class="am-modal-actions" id="${2:my-actions}">\n  <div class="am-modal-actions-group">\n    <ul class="am-list">\n      <li class="am-modal-actions-header"></li>\n      <li><a href="#"><span class="am-icon-${3:wechat}"></span>${4:wechat \u6807\u9898}</a></li>\n      <li><a href="#"><i class="am-icon-${5:mobile}"></i>${6:mobile \u6807\u9898}</a></li>\n      <li class="am-modal-actions-danger"><a href="#"><i class="am-icon-${7:twitter}"></i> ${8:twitter \u6807\u9898} </a></li>\n    </ul>\n  </div>\n  <div class="am-modal-actions-group">\n    <button class="am-btn am-btn-secondary am-btn-block" data-am-modal-close>${9:\u53D6\u6D88}</button>\n  </div>\n</div>'
+  'am-modal-alert':
+    'prefix': 'am-modal:alert'
+    'body': '<!-- \u89E6\u53D1 button -->\n<button class="am-btn am-btn-secondary" data-am-modal="{target: \'#${1:my-id}\'}">alert</button>\n<div class="am-modal am-modal-alert" tabindex="-1" id="${2:my-alert}">\n  <div class="am-modal-dialog">\n    <div class="am-modal-hd">${3:Modal Alert \u6807\u9898}</div>\n    <div class="am-modal-bd">\n      ${4:Hello world\uFF01}\n    </div>\n    <div class="am-modal-footer">\n      <span class="am-modal-btn">\u786E\u5B9A</span>\n    </div>\n  </div>\n</div>'
+  'am-modal-confirm':
+    'prefix': 'am-modal:confirm'
+    'body': '<!-- \u89E6\u53D1 button -->\n<button class="am-btn am-btn-secondary" data-am-modal="{target: \'#${1:my-id}\'}">confirm</button>\n<div class="am-modal am-modal-confirm" tabindex="-1" id="${2:my-confirm}">\n  <div class="am-modal-dialog">\n    <div class="am-modal-hd">${3:confirm title}</div>\n    <div class="am-modal-bd">\n      ${4:\u5185\u5BB9}\n    </div>\n    <div class="am-modal-footer">\n      <span class="am-modal-btn" data-am-modal-cancel>\u53D6\u6D88</span>\n      <span class="am-modal-btn" data-am-modal-confirm>\u786E\u5B9A</span>\n    </div>\n  </div>\n</div>\n<div class="am-modal am-modal-prompt" tabindex="-1" id="${5:my-prompt}">\n  <div class="am-modal-dialog">\n    <div class="am-modal-hd">${6:\u6807\u9898}</div>\n    <div class="am-modal-bd">\n      ${4:\u5185\u5BB9}\n      <input type="text" class="am-modal-prompt-input">\n    </div>\n    <div class="am-modal-footer">\n      <span class="am-modal-btn" data-am-modal-cancel>\u53D6\u6D88</span>\n      <span class="am-modal-btn" data-am-modal-confirm>\u63D0\u4EA4</span>\n    </div>\n  </div>\n</div>'
+  'am-modal-loading':
+    'prefix': 'am-modal:loading'
+    'body': '<!-- \u89E6\u53D1 button -->\n<button class="am-btn am-btn-secondary" data-am-modal="{target: \'#${1:my-id}\'}">loading</button>\n<div class="am-modal am-modal-loading am-modal-no-btn" tabindex="-1" id="${2:my-modal-loading}">\n  <div class="am-modal-dialog">\n    <div class="am-modal-hd">${3:\u6B63\u5728\u8F7D\u5165...}</div>\n    <div class="am-modal-bd">\n      <span class="am-icon-spinner am-icon-spin"></span>\n    </div>\n  </div>\n</div>'
+  'am-modal-popup':
+    'prefix': 'am-modal:popup'
+    'body': '<!-- \u89E6\u53D1 button -->\n<button class="am-btn am-btn-secondary" data-am-modal="{target: \'#${1:my-id}\'}">popup</button>'
+  'am-modal-prompt':
+    'prefix': 'am-modal:prompt'
+    'body': '<!-- \u89E6\u53D1 button -->\n<button class="am-btn am-btn-secondary" data-am-modal="{target: \'#${1:my-id}\'}">prompt</button>'
+  'am-modal':
+    'prefix': 'am-modal'
+    'body': '<!-- \u89E6\u53D1 button -->\n<button class="am-btn am-btn-primary" data-am-modal>${1:Modal}</button>\n<div class="am-modal am-modal-no-btn" tabindex="-1">\n  <div class="am-modal-dialog">\n    <div class="am-modal-hd">${2:Modal \u6807\u9898}\n      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>\n    </div>\n    <div class="am-modal-bd">\n      ${3:Modal \u5185\u5BB9}\n    </div>\n  </div>\n</div>'
+  'am-offcanvas-flip':
+    'prefix': 'am-offcanvas:flip'
+    'body': '<!-- \u6309\u94AE\u89E6\u53D1\u5668 -->\n<button class="am-btn am-btn-primary" data-am-offcanvas="{target: \'${1:#your-id}\'}">${2:\u70B9\u51FB\u663E\u793A\u4FA7\u8FB9\u680F}</button>\n<!-- \u4FA7\u8FB9\u680F\u5185\u5BB9 -->\n<div id="${3:your-id}" class="am-offcanvas">\n  <div class="am-offcanvas-bar am-offcanvas-bar-flip">\n    <div class="am-offcanvas-content">\n    <!-- \u4F60\u7684\u5185\u5BB9 -->\n    ${4:\u5185\u5BB9}\n    </div>\n  </div>\n</div>'
+  'am-offcanvas':
+    'prefix': 'am-offcanvas'
+    'body': '<!-- \u6309\u94AE\u89E6\u53D1\u5668 -->\n<button class="am-btn am-btn-primary" data-am-offcanvas="{target: \'${1:#your-id}\'}">${2:\u70B9\u51FB\u663E\u793A\u4FA7\u8FB9\u680F}</button>\n<!-- \u4FA7\u8FB9\u680F\u5185\u5BB9 -->\n<div id="${3:your-id}" class="am-offcanvas">\n  <div class="am-offcanvas-bar">\n    <div class="am-offcanvas-content">\n    <!-- \u4F60\u7684\u5185\u5BB9 -->\n    ${4:\u5185\u5BB9}\n    </div>\n  </div>\n</div>'
+  'am-pagination-centered':
+    'prefix': 'am-pagination:centered'
+    'body': '<ul class="am-pagination am-pagination-centered">\n  <li class="am-disabled"><a href="#">&laquo;</a></li>\n  <li class="am-active"><a href="#">${1:1}</a></li>\n  <li><a href="#">${2:2}</a></li>\n  <li><a href="#">${3:3}</a></li>\n  <li><a href="#">&raquo;</a></li>\n</ul>'
+  'am-pagination-prevnext':
+    'prefix': 'am-pagination:prevnext'
+    'body': '<ul class="am-pagination">\n  <li class="am-pagination-prev"><a href="#">&laquo; Prev</a></li>\n  <li class="am-pagination-next"><a href="#">Next &raquo;</a></li>\n</ul>'
+  'am-pagination-right':
+    'prefix': 'am-pagination:right'
+    'body': '<ul class="am-pagination am-pagination-right">\n  <li class="am-disabled"><a href="#">&laquo;</a></li>\n  <li class="am-active"><a href="#">${1:1}</a></li>\n  <li><a href="#">${2:2}</a></li>\n  <li><a href="#">${3:3}</a></li>\n  <li><a href="#">&raquo;</a></li>\n</ul>'
+  'am-pagination':
+    'prefix': 'am-pagination'
+    'body': '<ul class="am-pagination">\n  <li class="am-disabled"><a href="#">&laquo;</a></li>\n  <li class="am-active"><a href="#">${1:1}</a></li>\n  <li><a href="#">${2:2}</a></li>\n  <li><a href="#">${3:3}</a></li>\n  <li><a href="#">&raquo;</a></li>\n</ul>'
+  'am-panel-danger':
+    'prefix': 'am-panel:danger'
+    'body': '<section class="am-panel am-panel-danger">\n  <header class="am-panel-hd">\n    <h3 class="am-panel-title">${1:\u9762\u677F\u6807\u9898}</h3>\n  </header>\n  <div class="am-panel-bd">\n    ${2:\u9762\u677F\u5185\u5BB9}\n  </div>\n  <footer class="am-panel-footer">${3:\u9762\u677F\u9875\u811A}</footer>\n</section>'
+  'am-panel-footer':
+    'prefix': 'am-panel:footer'
+    'body': '<section class="am-panel am-panel-default">\n  <div class="am-panel-bd">\n    ${1:\u9762\u677F\u5185\u5BB9}\n  </div>\n  <footer class="am-panel-footer">${2:\u9762\u677F\u9875\u811A}</footer>\n</section>'
+  'am-panel-group':
+    'prefix': 'am-panel:group'
+    'body': '<div class="am-panel-group">\n  <section class="am-panel am-panel-default">\n    <header class="am-panel-hd">\n      <h3 class="am-panel-title">${1:\u9762\u677F\u6807\u98981}</h3>\n    </header>\n    <div class="am-panel-bd">\n      ${2:\u9762\u677F\u5185\u5BB91}\n    </div>\n    <footer class="am-panel-footer">${3:\u9762\u677F\u9875\u811A1}</footer>\n  </section>\n  <section class="am-panel am-panel-default">\n    <header class="am-panel-hd">\n      <h3 class="am-panel-title">${4:\u9762\u677F\u6807\u98982}</h3>\n    </header>\n    <div class="am-panel-bd">\n      ${5:\u9762\u677F\u5185\u5BB92}\n    </div>\n    <footer class="am-panel-footer">${6:\u9762\u677F\u9875\u811A2}</footer>\n  </section>\n</div>'
+  'am-panel-list':
+    'prefix': 'am-panel:list'
+    'body': '<section class="am-panel am-panel-default">\n  <div class="am-panel-bd">\n    ${1:\u9762\u677F\u5185\u5BB9}\n  </div>\n  <ul class="am-list am-list-static">\n    <li></li>\n  </ul>\n  <footer class="am-panel-footer">${2:\u9762\u677F\u9875\u811A}</footer>\n</section>'
+  'am-panel-primary':
+    'prefix': 'am-panel:primary'
+    'body': '<section class="am-panel am-panel-primary">\n  <header class="am-panel-hd">\n    <h3 class="am-panel-title">${1:\u9762\u677F\u6807\u9898}</h3>\n  </header>\n  <div class="am-panel-bd">\n    ${2:\u9762\u677F\u5185\u5BB9}\n  </div>\n  <footer class="am-panel-footer">${3:\u9762\u677F\u9875\u811A}</footer>\n</section>'
+  'am-panel-secondary':
+    'prefix': 'am-panel:secondary'
+    'body': '<section class="am-panel am-panel-secondary">\n  <header class="am-panel-hd">\n    <h3 class="am-panel-title">${1:\u9762\u677F\u6807\u9898}</h3>\n  </header>\n  <div class="am-panel-bd">\n    ${2:\u9762\u677F\u5185\u5BB9}\n  </div>\n  <footer class="am-panel-footer">${3:\u9762\u677F\u9875\u811A}</footer>\n</section>'
+  'am-panel-success':
+    'prefix': 'am-panel:success'
+    'body': '<section class="am-panel am-panel-success">\n  <header class="am-panel-hd">\n    <h3 class="am-panel-title">${1:\u9762\u677F\u6807\u9898}</h3>\n  </header>\n  <div class="am-panel-bd">\n    ${2:\u9762\u677F\u5185\u5BB9}\n  </div>\n  <footer class="am-panel-footer">${3:\u9762\u677F\u9875\u811A}</footer>\n</section>'
+  'am-panel-table':
+    'prefix': 'am-panel:table'
+    'body': '<section class="am-panel am-panel-default">\n  <div class="am-panel-bd">\n    ${1:\u9762\u677F\u5185\u5BB9}\n  </div>\n  <table class="am-table">\n    <thead></thead>\n    <tbody></tbody>\n  </table>\n  <footer class="am-panel-footer">${2:\u9762\u677F\u9875\u811A}</footer>\n</section>'
+  'am-panel-warning':
+    'prefix': 'am-panel:warning'
+    'body': '<section class="am-panel am-panel-warning">\n  <header class="am-panel-hd">\n    <h3 class="am-panel-title">${1:\u9762\u677F\u6807\u9898}</h3>\n  </header>\n  <div class="am-panel-bd">\n    ${2:\u9762\u677F\u5185\u5BB9}\n  </div>\n  <footer class="am-panel-footer">${3:\u9762\u677F\u9875\u811A}</footer>\n</section>'
+  'am-panel':
+    'prefix': 'am-panel'
+    'body': '<section class="am-panel am-panel-default">\n  <header class="am-panel-hd">\n    <h3 class="am-panel-title">${1:\u9762\u677F\u6807\u9898}</h3>\n  </header>\n  <div class="am-panel-bd">\n    ${2:\u9762\u677F\u5185\u5BB9}\n  </div>\n  <footer class="am-panel-footer">${3:\u9762\u677F\u9875\u811A}</footer>\n</section>'
+  'am-popover':
+    'prefix': 'am-popover'
+    'body': '<button class="am-btn am-btn-success" data-am-popover="{content: \'${1:\u5185\u5BB9}\', trigger: \'hover focus\'}">\n  ${2:Popover}\n</button>'
+  'am-progress-danger':
+    'prefix': 'am-progress:danger'
+    'body': '<div class="am-progress">\n  <div class="am-progress-bar am-progress-bar-danger" style="${1:width: 15%}"></div>\n</div>'
+  'am-progress-secondary':
+    'prefix': 'am-progress:secondary'
+    'body': '<div class="am-progress">\n  <div class="am-progress-bar am-progress-bar-secondary" style="${1:width: 15%}"></div>\n</div>'
+  'am-progress-sm':
+    'prefix': 'am-progress:sm'
+    'body': '<div class="am-progress am-progress-sm">\n  <div class="am-progress-bar" style="${1:width: 15%}"></div>\n</div>'
+  'am-progress-striped':
+    'prefix': 'am-progress:striped'
+    'body': '<div class="am-progress am-progress-striped">\n  <div class="am-progress-bar" style="${1:width: 15%}"></div>\n</div>'
+  'am-progress-success':
+    'prefix': 'am-progress:success'
+    'body': '<div class="am-progress">\n  <div class="am-progress-bar am-progress-bar-success" style="${1:width: 15%}"></div>\n</div>'
+  'am-progress-warning':
+    'prefix': 'am-progress:warning'
+    'body': '<div class="am-progress">\n  <div class="am-progress-bar am-progress-bar-warning" style="${1:width: 15%}"></div>\n</div>'
+  'am-progress-xs':
+    'prefix': 'am-progress:xs'
+    'body': '<div class="am-progress am-progress-xs">\n  <div class="am-progress-bar" style="${1:width: 15%}"></div>\n</div>'
+  'am-progress':
+    'prefix': 'am-progress'
+    'body': '<div class="am-progress">\n  <div class="am-progress-bar" style="width: ${1:40%}">40%</div>\n</div>'
+  'am-scrollspy-fade':
+    'prefix': 'am-scrollspy:fade'
+    'body': '<div data-am-scrollspy="\'{animation: \'fade\'${1:, delay: 3000, repeat: false}\'}">\n  ${2:\u5185\u5BB9}\n</div>'
+  'am-scrollspy-scale-down':
+    'prefix': 'am-scrollspy:scale-down'
+    'body': '<div data-am-scrollspy="\'{animation: \'scale-down\'${1:, delay: 3000, repeat: false}\'}">\n  ${2:\u5185\u5BB9}\n</div>'
+  'am-scrollspy-scale-up':
+    'prefix': 'am-scrollspy:scale-up'
+    'body': '<div data-am-scrollspy="\'{animation: \'scale-up\'${1:, delay: 3000, repeat: false}\'}">\n  ${2:\u5185\u5BB9}\n</div>'
+  'am-scrollspy-shake':
+    'prefix': 'am-scrollspy:shake'
+    'body': '<div data-am-scrollspy="\'{animation: \'shake\'${1:, delay: 3000, repeat: false}\'}">\n  ${2:\u5185\u5BB9}\n</div>'
+  'am-scrollspy-slide-bottom':
+    'prefix': 'am-scrollspy:slide-bottom'
+    'body': '<div data-am-scrollspy="\'{animation: \'slide-bottom\'${1:, delay: 3000, repeat: false}\'}">\n  ${2:\u5185\u5BB9}\n</div>'
+  'am-scrollspy-slide-left':
+    'prefix': 'am-scrollspy:slide-left'
+    'body': '<div data-am-scrollspy="\'{animation: \'slide-left\'${1:, delay: 3000, repeat: false}\'}">\n  ${2:\u5185\u5BB9}\n</div>'
+  'am-scrollspy-slide-right':
+    'prefix': 'am-scrollspy:slide-right'
+    'body': '<div data-am-scrollspy="\'{animation: \'slide-right\'${1:, delay: 3000, repeat: false}\'}">\n  ${2:\u5185\u5BB9}\n</div>'
+  'am-scrollspy-slide-top':
+    'prefix': 'am-scrollspy:slide-top'
+    'body': '<div data-am-scrollspy="\'{animation: \'slide-top\'${1:, delay: 3000, repeat: false}\'}">\n  ${2:\u5185\u5BB9}\n</div>'
+  'am-scrollspy':
+    'prefix': 'am-scrollspy'
+    'body': '<div data-am-scrollspy="\'{animation: \'\'${1:, delay: 3000, repeat: false}\'}">\n  ${2:\u5185\u5BB9}\n</div>'
+  'am-scrollspy-nav':
+    'prefix': 'am-scrollspy-nav'
+    'body': '<nav class="scrollspy-nav" data-am-scrollspy-nav data-am-sticky>\n  <ul>\n    <li><a href="#${1:title}">${2:\u6807\u9898}</a></li>\n  </ul>\n</nav>\n<div id="${1:title}">\n  ${4:\u4FA6\u6D4B\u6EDA\u52A8}\n</div>'
+  'am-selected-group':
+    'prefix': 'am-selected:group'
+    'body': '<select multiple data-am-selected>\n  <optgroup label="group1">\n    <option value="${1:a1}">${2:title #1}</option>\n    <option value="${3:a2}" selected>${4:selected #1}</option>\n  </optgroup>\n  <optgroup label="group2">\n    <option value="${5:a3}">${6:title #2}</option>\n    <option value="${7:a4}" selected>${8:selected #2}</option>\n  </optgroup>\n</select>'
+  'am-selected-multiple':
+    'prefix': 'am-selected:multiple'
+    'body': '<select multiple data-am-selected>\n  <option value="${1:a1}">${2:title}</option>\n  <option value="${3:a2}" selected>${4:selected}</option>\n</select>'
+  'am-selected':
+    'prefix': 'am-selected'
+    'body': '<select data-am-selected>\n  <option value="${1:a1}">${2:title}</option>\n  <option value="${3:a2}" selected>${4:selected}</option>\n</select>'
+  'am-sticky':
+    'prefix': 'am-sticky'
+    'body': '<div data-am-sticky>\n  <button class="am-btn am-btn-primary am-btn-block">${1:Stick to top}</button>\n</div>'
+  'am-slider':
+    'prefix': 'am-slider'
+    'body': '<div class="am-slider am-slider-default" data-am-flexslider>\n  <ul class="am-slides">\n    <li><img src="${1:\u56FE\u7247\u5730\u5740}" /></li>\n  </ul>\n</div>'
+  'am-smoothscroll':
+    'prefix': 'am-smoothscroll'
+    'body': '<button data-am-smooth-scroll type="button">${1:\u6EDA\u52A8\u5230\u9876\u90E8}</button>'
+  'am-tabs':
+    'prefix': 'am-tabs'
+    'body': '<div class="am-tabs" data-am-tabs>\n  <ul class="am-tabs-nav am-nav am-nav-tabs">\n    <li class="am-active"><a href="#tab1">${1:active \u6807\u9898}</a></li>\n    <li><a href="#tab2">${2:\u6807\u9898}</a></li>\n  </ul>\n\n  <div class="am-tabs-bd">\n    <div class="am-tab-panel am-fade am-in am-active" id="tab1">\n      ${3:active \u5185\u5BB9}\n    </div>\n    <div class="am-tab-panel am-fade" id="tab2">\n      ${4:\u5185\u5BB9}\n    </div>\n  </div>\n</div>'
+  'am-thumbnail':
+    'prefix': 'am-thumbnail'
+    'body': '<!-- \u80FD\u7ED3\u5408 Grid\u3001AVG Grid \u4F7F\u7528 -->\n<div class="am-thumbnail">\n  <img src="" alt=""/>\n  <h3 class="am-thumbnail-caption">${1:\u56FE\u7247\u6807\u9898}</h3>\n</div>'
+  'am-table-bordered':
+    'prefix': 'am-table:bordered'
+    'body': '<table class="am-table am-table-bordered${1: am-table-hover}">\n  <thead>\n    <tr>\n      <th>${2:\u8868\u683C\u6807\u9898}</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>${3:\u8868\u683C\u5185\u5BB91}</td>\n    </tr>\n    <tr class="am-active">\n      <td>${4:active \u8868\u683C\u5185\u5BB9}</td>\n    </tr>\n  </tbody>\n</table>'
+  'am-table-radius':
+    'prefix': 'am-table:radius'
+    'body': '<table class="am-table am-table-radius${1: am-table-hover}">\n  <thead>\n    <tr>\n      <th>${2:\u8868\u683C\u6807\u9898}</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>${3:\u8868\u683C\u5185\u5BB91}</td>\n    </tr>\n    <tr class="am-active">\n      <td>${4:active \u8868\u683C\u5185\u5BB9}</td>\n    </tr>\n  </tbody>\n</table>'
+  'am-table-striped':
+    'prefix': 'am-table:striped'
+    'body': '<table class="am-table am-table-striped${1: am-table-hover}">\n  <thead>\n    <tr>\n      <th>${2:\u8868\u683C\u6807\u9898}</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>${3:\u8868\u683C\u5185\u5BB91}</td>\n    </tr>\n    <tr class="am-active">\n      <td>${4:active \u8868\u683C\u5185\u5BB9}</td>\n    </tr>\n  </tbody>\n</table>'
+  'am-table':
+    'prefix': 'am-table'
+    'body': '<table class="am-table${1: am-table-hover}">\n  <thead>\n    <tr>\n      <th>${2:\u8868\u683C\u6807\u9898}</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>${3:\u8868\u683C\u5185\u5BB91}</td>\n    </tr>\n    <tr class="am-active">\n      <td>${4:active \u8868\u683C\u5185\u5BB9}</td>\n    </tr>\n  </tbody>\n</table>'
+  'am-topbar-fixed-bottom':
+    'prefix': 'am-topbar:fixed-bottom'
+    'body': '<header class="am-topbar am-topbar-fixed-bottom">\n  <h1 class="am-topbar-brand">\n      <a href="#">${1:Topbar \u5BFC\u822A\u6761}</a>\n  </h1>\n  <!-- screen < 640 button show -->\n  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: \'${2:#doc-topbar-collapse}\'}"><span class="am-sr-only">${3:\u5BFC\u822A\u5207\u6362}</span> <span class="am-icon-bars"></span></button>\n\n  <!-- screen < 640 hide -->\n  <div class="am-collapse am-topbar-collapse" id="${4:doc-topbar-collapse}">\n    <ul class="am-nav am-nav-pills am-topbar-nav">\n      <li class="am-active"><a href="#">${5:\u4E0B\u62C9\u5217\u8868 active}</a></li>\n      <li class="am-dropdown" data-am-dropdown>\n        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">\n          ${6:\u4E0B\u62C9} <span class="am-icon-caret-down"></span>\n        </a>\n        <ul class="am-dropdown-content">\n          <li class="am-dropdown-header">${7:li header}</li>\n          <li><a href="#">${8:\u4E0B\u62C9\u5217\u886801}</a></li>\n        </ul>\n      </li>\n    </ul>\n\n    <!-- topbar-right -->\n    <div class="am-topbar-right">\n      <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">${9:\u5185\u5BB9}</button>\n    </div>\n  </div>\n</header>'
+  'am-topbar-fixed-top':
+    'prefix': 'am-topbar:fixed-top'
+    'body': '<header class="am-topbar am-topbar-fixed-top">\n  <h1 class="am-topbar-brand">\n      <a href="#">${1:Topbar \u5BFC\u822A\u6761}</a>\n  </h1>\n  <!-- screen < 640 button show -->\n  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: \'${2:#doc-topbar-collapse}\'}"><span class="am-sr-only">${3:\u5BFC\u822A\u5207\u6362}</span> <span class="am-icon-bars"></span></button>\n\n  <!-- screen < 640 hide -->\n  <div class="am-collapse am-topbar-collapse" id="${4:doc-topbar-collapse}">\n    <ul class="am-nav am-nav-pills am-topbar-nav">\n      <li class="am-active"><a href="#">${5:\u4E0B\u62C9\u5217\u8868 active}</a></li>\n      <li class="am-dropdown" data-am-dropdown>\n        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">\n          ${6:\u4E0B\u62C9} <span class="am-icon-caret-down"></span>\n        </a>\n        <ul class="am-dropdown-content">\n          <li class="am-dropdown-header">${7:li header}</li>\n          <li><a href="#">${8:\u4E0B\u62C9\u5217\u886801}</a></li>\n        </ul>\n      </li>\n    </ul>\n\n    <!-- topbar-right -->\n    <div class="am-topbar-right">\n      <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">${9:\u5185\u5BB9}</button>\n    </div>\n  </div>\n</header>'
+  'am-topbar-inverse':
+    'prefix': 'am-topbar:inverse'
+    'body': '<header class="am-topbar am-topbar-inverse">\n  <h1 class="am-topbar-brand">\n      <a href="#">${1:Topbar \u5BFC\u822A\u6761}</a>\n  </h1>\n  <!-- screen < 640 button show -->\n  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: \'${2:#doc-topbar-collapse}\'}"><span class="am-sr-only">${3:\u5BFC\u822A\u5207\u6362}</span> <span class="am-icon-bars"></span></button>\n\n  <!-- screen < 640 hide -->\n  <div class="am-collapse am-topbar-collapse" id="${4:doc-topbar-collapse}">\n    <ul class="am-nav am-nav-pills am-topbar-nav">\n      <li class="am-active"><a href="#">${5:\u4E0B\u62C9\u5217\u8868 active}</a></li>\n      <li class="am-dropdown" data-am-dropdown>\n        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">\n          ${6:\u4E0B\u62C9} <span class="am-icon-caret-down"></span>\n        </a>\n        <ul class="am-dropdown-content">\n          <li class="am-dropdown-header">${7:li header}</li>\n          <li><a href="#">${8:\u4E0B\u62C9\u5217\u886801}</a></li>\n        </ul>\n      </li>\n    </ul>\n\n    <!-- topbar-right -->\n    <div class="am-topbar-right">\n      <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">${9:\u5185\u5BB9}</button>\n    </div>\n  </div>\n</header>'
+  'am-topbar':
+    'prefix': 'am-topbar'
+    'body': '<header class="am-topbar">\n  <h1 class="am-topbar-brand">\n      <a href="#">${1:Topbar \u5BFC\u822A\u6761}</a>\n  </h1>\n  <!-- screen < 640 button show -->\n  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: \'${2:#doc-topbar-collapse}\'}"><span class="am-sr-only">${3:\u5BFC\u822A\u5207\u6362}</span> <span class="am-icon-bars"></span></button>\n\n  <!-- screen < 640 hide -->\n  <div class="am-collapse am-topbar-collapse" id="${4:doc-topbar-collapse}">\n    <ul class="am-nav am-nav-pills am-topbar-nav">\n      <li class="am-active"><a href="#">${5:\u4E0B\u62C9\u5217\u8868 active}</a></li>\n      <li class="am-dropdown" data-am-dropdown>\n        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">\n          ${6:\u4E0B\u62C9} <span class="am-icon-caret-down"></span>\n        </a>\n        <ul class="am-dropdown-content">\n          <li class="am-dropdown-header">${7:li header}</li>\n          <li><a href="#">${8:\u4E0B\u62C9\u5217\u886801}</a></li>\n        </ul>\n      </li>\n    </ul>\n\n    <!-- topbar-right -->\n    <div class="am-topbar-right">\n      <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">${9:\u5185\u5BB9}</button>\n    </div>\n  </div>\n</header>'
+  'am-ucheck-checked':
+    'prefix': 'am-ucheck:checked'
+    'body': '<label class="am-checkbox">\n  <input type="${1:checkbox}" value="" data-am-ucheck checked> ${2:checked}\n</label>'
+  'am-ucheck-disabled':
+    'prefix': 'am-ucheck:disabled'
+    'body': '<label class="am-checkbox">\n  <input type="${1:checkbox}" value="" data-am-ucheck disabled> ${2:disabled}\n</label>'
+  'am-ucheck':
+    'prefix': 'am-ucheck'
+    'body': '<label class="am-checkbox">\n  <input type="${1:checkbox}" value="" data-am-ucheck> ${2:title}\n</label>'
