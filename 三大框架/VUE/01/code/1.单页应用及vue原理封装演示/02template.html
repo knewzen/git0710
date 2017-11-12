@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>模板（VUE框架的实质）步骤1</title>
+</head>
+<body>
+    <input type="text">
+    <p></p>
+    
+</body>
+</html>
+
+<script>
+    var obj = {
+        msg: '你好，vue',
+        name: '哦豆豆呦'
+    }
+
+    // 1.如何把对象内的数据展示到html两个标签中？
+
+    // 基础解决：
+    // 获取DOM
+    var oInput = document.querySelector('input');
+    var oP = document.querySelector('p');
+    // 赋值
+    oInput.value = obj.msg;
+    oP.innerHTML = obj.name;
+
+    // 2.现在自己写框架，模仿vue，把获取DOM部分封装
+        // 因为如果标签过多时，封装获取更方便
+
+
+</script>

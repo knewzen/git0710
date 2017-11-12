@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>封装获取DOM（VUE框架的实质）步骤2</title>
+</head>
+
+<body>
+    <p></p>
+
+</body>
+
+</html>
+
+
+<script>
+    // 2.现在自己写框架，模仿vue，把获取DOM部分封装。调用方法传参。因为如果标签过多时，封装获取更方便
+
+    function databind(options) { //定义方法；接收参数
+        // 在里面能获取到obj
+        var obj = options.data(); //调用这个方法，拿到返回值obj
+
+        // 获取DOM
+        var oP = document.querySelector('p');
+
+        oP.innerHTML = obj.msg;
+    }    
+</script>
+
+<script>
+    
+    var obj = {
+        msg: '你好，vue'
+    }
+
+    new databind({ //调用方法，实例化；传对象给方法
+        data:function(){ //把这个data整体传到options
+            return obj;
+        }
+    }); 
+
+
+
+    // 3.把 databind 方法整体封装 到一个js文件里，使用时调用js文件即可
+</script>
