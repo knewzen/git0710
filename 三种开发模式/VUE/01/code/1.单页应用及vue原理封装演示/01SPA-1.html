@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>#/后的hash值变化（改A/B/C） 显示内容的切换</title>
+</head>
+
+<!-- 单页应用：只是内容换了，页面没有刷新 -->
+<body>
+    <div id="A" class="a" style="display:block">A</div>
+    <div id="B" class="b" style="display:none;">B</div>
+    <div id="C" class="c" style="display:none;">C</div>
+</body>
+</html>
+<script>
+    function hashChanged(hashObj) {
+        // console.log('hashChanged')
+
+        console.log(hashObj)
+        // hashObj其实就是一个事件，事件里面本来就包含了newURL和oldURL两个属性打印了完整路径（切换前后的路径都可以获得），
+        // 拿到地址，截取最后进行匹对即可
+
+        // 获取新旧url
+        var newhash = hashObj.newURL.split('#/')[1]; //截取 地址#/后面的内容
+        var oldhash = hashObj.oldURL.split('#/')[1];
+        document.getElementById(oldhash).style.display = 'none';
+        document.getElementById(newhash).style.display = 'block'
+    }
+    // 如果当前窗口的hash值变了，就会执行自己封装的方法
+    window.onhashchange = hashChanged    
+</script>

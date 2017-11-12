@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>（VUE框架的实质）步骤4</title>
+</head>
+<body>
+    <input type="text" v-model="msg">
+    <input type="text" v-model="name">
+</body>
+</html>
+
+
+<script>
+    // 4.和步骤3一样，input和p标签封装类似但不同，下面一步会封装工具类
+    // 封装工具类后时隐藏，调用js
+    /*
+    function DataBind(options) { 
+        var obj = options.data();
+        var oInputs = document.querySelectorAll('[v-model]');
+        for(var i = 0; i<oInputs.length; i++) {
+            var oInput = oInputs[i];
+            var attrVal = oInput.getAttribute('v-model');
+            oInput.value = obj[attrVal];
+        }
+    }*/   
+</script>
+<script src="./05form-value.js"></script>
+
+<script>
+
+    var obj = {
+        msg: '我是VUE',
+        name: 'name'
+    }
+
+    new DataBind({
+        data: function () {
+            return obj;
+        }
+    });
+
+</script>
+
+
+<!-- 5.进行到下一步骤，把3和4两种情况集合 -->
