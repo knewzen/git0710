@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>computed计算属性</title>
+</head>
+
+<body>
+
+    <div id="app">
+        {{msg}}
+        <input type="text" v-model="msg" ><!-- 双向绑定：调用input可以修改msg的值 -->
+        <!-- 需求:无论input及msg的值怎么变化，都想在其后加.momo；可以理解为保存文件，文件后缀总是要自动加上-->
+        {{myMsg}}
+        
+        <br>
+
+        <input type="text" v-model="name">
+        {{myName}}
+
+
+    </div>
+
+
+    <script src="./node_modules/vue/dist/vue.js"></script>
+
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data: function () { 
+                return {
+                    msg: '你好',
+                    name: 'hello'
+                }
+            },
+            // 计算属性
+            // 参数一：名称；参数二：方法体
+            // 计算属性中可以添加方法，也可以添加对象,一般都用方法
+            computed: {
+                myMsg: function() { //能够监听data里值的变化，如果变化了，就调用计算属性里的这个方法
+                    // 实质上调用了get方法而已
+                    return this.msg + '.momo'; //拿到变化值（input改变msg值）+后缀
+                    // 调用myMsg名称属性 可显示计算结果
+                },
+
+                // 如果给成对象，那必须包含set和get两个方法
+                myName: {
+                    set: function(val) { //对myName属性赋值，这里应该接收val形参，希望把val赋值给name
+                        this.name = val
+                    },
+                    get: function() { //读取myName，读取的时候加后缀
+                        return this.name + '.meme'
+                    }
+                }
+            }
+        })
+    // 最好使用computed,不要使用watch
+    // 原因:computed有缓存机制,watch没有
+    //  缓存机制：如computed的myMsg方法监听的就是msg，会第一次从data读取msg的值是什么，然后把值存到内存（缓存）里中，第二次调用msg值时会从缓存中读取值，不会从data中获取了，直到更改data中的值会重新读取。
+    //  所以watch没有缓存机制，比computed浪费性能
+    //  if else语句，else很浪费性能，尽量不写else
+    </script>
+
+</body>
+
+</html>

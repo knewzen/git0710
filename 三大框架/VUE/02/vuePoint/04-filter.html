@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>filter过滤器（管道思想）</title>
+</head>
+
+<body>
+    <!-- 管道思想：例{{birthday | getAge}}，把前面的值（birthday）插入到管道（|）中去，再通过管道（|）输出到当前过滤器里（getAge）总结：前面的输出等于后面的输入，并没有存储能力，只有传递功能 -->
+    <!-- 堆栈的栈：是先进后出
+    管道：是先进先出
+    队列：和管道相似，也是先进先出 -->
+
+    <div id="app">
+        <!-- 想要的效果：这个时间距今多少年 -->
+        {{birthday | getAge}}
+
+        <!-- {{birthday | getAge | getAge1}} -->
+        <!-- 结果呈现getAge1 -->
+
+        <!-- 转换成大写 -->
+        {{msg | upper}}
+
+        <!-- 公有过滤器方法 -->
+        {{msg | upperStr}}
+
+        <!-- 转换成小写 -->
+        {{name | lowerStr}}
+    </div>
+
+    <div id="app1">
+       {{name1 | upperStr}}
+    </div>
+
+
+
+    <script src="./node_modules/vue/dist/vue.js"></script>
+
+    <script>
+        // 公有过滤器(没有s，因为还是一个过滤器)
+        // 可以作用于多个vm对象
+        Vue.filter('upperStr', function(val) { 
+            return val.toUpperCase()
+         })
+
+        var vm1 = new Vue({
+            el:'#app1',
+            data:function () {
+                return {
+                    name1:'sdjfosif'
+                }
+            }
+        })
+
+        var vm = new Vue({
+            el: '#app',
+            data: function () {
+                return {
+                    birthday: '2000/12/7',
+                    msg: 'fefwfeffe',
+                    name: 'JOfeFSjfei'
+                }
+            },
+            // 写在vm对象内部的过滤器，成为私有过滤器
+            // filters是总的过滤器的集合
+            // 里面的每一个单独的过滤器，需要给一下参数
+            // 参数一：过滤器的名字
+            // 参数二：过滤器方法
+            filters: {
+                getAge: function (val) {
+                    var birth = new Date(val);
+                    var birthYear = birth.getFullYear();
+                    var now = new Date().getFullYear();
+                    return now - birthYear;
+                },
+                // getAge1: function (val) {
+                //     var birth = new Date(val);
+                //     var birthYear = birth.getFullYear();
+                //     var now = new Date().getFullYear();
+                //     return now - birthYear;
+                // },
+                'upper': function(val) { 
+                    return val.toUpperCase()
+                },
+                'lowerStr': function(val) { 
+                    return val.toLowerCase()
+                 }
+
+            }
+
+        })
+
+    </script>
+</body>
+
+</html>
