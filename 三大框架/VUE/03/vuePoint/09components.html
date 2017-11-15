@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>组件</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>组件的了解和使用</h1>
+
+        <!-- 双闭合标签 -->
+        <hello></hello> 
+        <!-- 如何加载：这个<hello>其实是一个占位符，把template的内容转换完后，把<hello>的内容给替换掉，达到显示效果，所以不要在标签中插入内容，写了内容也会被清除 -->
+
+        <!-- 单闭合标签不建议使用，vue存在一个bug：无法区分单双闭合标签的混在一起时，无法显示正常的标签个数 -->
+
+        <my-component></my-component> 
+        <!-- 若定义时有大写，调用时大写改小写前面加-的这种形式 -->
+        
+        <!-- 拓展：原来data里面name的值可以用{{}}展示，现在不行的原因 -->
+        <!-- {{name}}  -->
+        <!-- 结果报错name未定义 -->
+        <!-- 解释：无论使用公有组件还是私有组件，定义组件内的data里面的值是往template里作用的 -->
+        <!-- 而不是往整个作用域作用的，整个作用域是（el：'#app'）针对的 -->
+
+    </div>
+
+
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    
+    <script>
+
+        // 公有组件
+        Vue.component('myComponent',{ //组件名不推荐有大写，全小写最好
+            data:function (){
+                return {
+                    name: 'name'
+                }
+            },
+            template: '<h1>myComponent组件----{{name}}</h1>'
+        })
+
+
+        var vm = new Vue({
+            el: '#app',
+            data: function () {
+                return {
+                    msg: '学习VUE'
+                }
+            },
+
+            // 定义各个私有组件(定义组件可理解为定义标签)
+            // 定义组件需要有两个参数：
+            // 1.组件的名称2.组件的内容
+            components: {
+                'hello': {
+                    template: '<h1>这是template</h1>'
+                },
+                'world': {
+                    template: '<h1>这是template</h1>'
+                }
+            }
+
+        })
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

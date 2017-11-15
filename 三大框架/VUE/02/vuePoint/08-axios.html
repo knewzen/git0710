@@ -24,7 +24,7 @@
             el: '#app',
             data: function () {
                 return {
-                    // msg: '你好中国'
+                    obj: [] //这里接收response
                 }
             },
 
@@ -43,9 +43,11 @@
             methods: {
                 hello: function () {
                     // 进行请求(.then可以无限接.then；.catch可以捕捉到错误异常)
+                    //  const that = this
                     //  axios.get('http://localhost:3000/user')
                     //     .then(function (response) {
-                    //         console.log(response)
+                    //         console.log(response) //response的生命周期只在{}里，所以要在data中去接收
+                    //         that.obj = response.data
                     //     })
                     //     .catch(function (err) {
                     //         console.log('axios页面请求出错')
@@ -58,7 +60,7 @@
                     //      }
                     //  })
                     //     .then(function (response) {
-                    //         console.log(response)
+                    //         console.log(response) 
                     //     })
                     //     .catch(function (err) {
                     //         console.log('axios页面请求出错')
