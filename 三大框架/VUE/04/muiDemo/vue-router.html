@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用路由监听hash值变化，确定加载哪个组件（页面显示效果） 单页应用</title>
+</head>
+
+<body>
+    <div id="app">
+        <a href="#/news">跳转到news</a>
+        <a href="#/share">跳转到share</a>
+
+         <!-- vue-router提供了一个坑（不能写死），对所有的组件都适用，只要匹配上，组件就能加载到坑里 -->
+        <router-view></router-view>
+    </div>
+
+    <!-- 两者引入不能颠倒，后者也是用vue来封装的 -->
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script src="./node_modules/vue-router/dist/vue-router.js"></script>
+
+    <script>
+        // 公有组件
+        var news = Vue.component('news', {
+            template: '<h1>news的内容</h1>'
+        })
+        var share = Vue.component('share', {
+            template: '<h1>share的内容</h1>'
+        })
+
+        // 实例化
+        var router = new VueRouter({
+            routes: [
+                { name: 'news', path: '/news', component: news }, //一条对象是一条路由
+                { name: 'share', path: '/share', component: share }
+            ]
+        })
+
+        var vm = new Vue({
+            el: '#app',
+            // router: router, //前者是当前内置属性，后者是上面实例化的router，让两者有联系
+            router, //简写形式
+            data: function () {
+                return {
+
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
