@@ -1,0 +1,14 @@
+1.直接在线cdn：
+<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+
+2.引入插件
+  <script src="./js/flexible_css.js"></script>
+  <script src="./js/flexible.js"></script>
+
+
+
+
+
+
+
+debug是开发阶段用的
