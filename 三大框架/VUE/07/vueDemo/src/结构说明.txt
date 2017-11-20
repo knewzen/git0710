@@ -1,0 +1,14 @@
+components组件
+		
+
+	
+
+tool工具类（也有用util第三方框架工具）
+
+App.vue 组件部分
+
+index.html 入口部分
+
+main.js 对根组件的设置（以及路由、全局变量等）
+
+root.css
